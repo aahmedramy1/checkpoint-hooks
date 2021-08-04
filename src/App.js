@@ -1,6 +1,6 @@
 import MovieList from './Components/MovieList.js';
 import ButtonGroup from "./Components/ButtonGroup"
-import React, {useState, useRef} from 'react'
+import React, {useState} from 'react'
 import Data from "./data.json"
 
 function App() {
@@ -9,8 +9,6 @@ function App() {
     const [filterNum, setFilterNum] = useState(5);
 
     const [searchTerm, setSearchTerm] = useState("");
-
-    let originalData = useRef(movies);
 
 
     const addMovie = (movieObj) => {
