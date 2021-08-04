@@ -1,12 +1,18 @@
-import React, {useState} from "react"
+import React from "react"
 import MovieCard from "./MovieCard";
 
-export default function MovieList({movies})
+export default function MovieList({movies, term, filter})
 {
 	return (
 		<>
-			{ movies.map((movie, index) => (
-                <MovieCard title = {movies[index].Title} imageURL = {movies[index].Poster} description = {movies[index].Description}/>
+			{ movies.filter((val) => {
+				if(term === "") {
+					return val.rating <= filter;
+				} else if(val.Title.toLowerCase().includes(term.toLowerCase())) {
+					return val.rating <= filter;
+				}
+			}).map((movie) => (
+                <MovieCard title = {movie.Title} imageURL = {movie.Poster} description = {movie.Description} rating = {movie.rating} />
 			))}
 		</>
 	);

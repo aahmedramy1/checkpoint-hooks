@@ -1,0 +1,67 @@
+    [ {
+        "Title" : "Thor Ragnorak",
+        "Poster" : "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_.jpg",
+        "Description" : "fat thor movie",
+        "rating" : 3.95
+    },
+        {
+        "Title" : "Spider-Man Far From Home",
+        "Poster" : "https://resizing.flixster.com/6gPGTgXSvYagw4EMJL_S7_ORRLE=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzL2M1ZDMzZDMxLTU0MTEtNDc5Yy04NDMyLWU1NWE5MDdkOWFmMy53ZWJw",
+        "Description" : "bla bla bla bla",
+        "rating" : 3.75
+    },
+    {
+        "Title": "Star Wars: Episode IV - A New Hope",
+        "Year": "1977",
+        "imdbID": "tt0076759",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+        "rating": 1
+    },
+    {
+        "Title": "Star Wars: Episode V - The Empire Strikes Back",
+        "Year": "1980",
+        "imdbID": "tt0080684",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+        "rating": 3
+    },
+    {
+        "Title": "Star Wars: Episode VI - Return of the Jedi",
+        "Year": "1983",
+        "imdbID": "tt0086190",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+        "rating": 4
+    },
+    {
+        "Poster": "https://avatarfiles.alphacoders.com/633/63329.png",
+        "Title": "Goku",
+        "Description": "bla blab bla Goku",
+        "rating": 2
+    },
+    {
+        "Poster": "https://avatarfiles.alphacoders.com/968/96848.png",
+        "Title": "Yato",
+        "Description": "bla blab bla Yato",
+        "rating": 5
+    },
+    {
+        "Poster": "https://avatarfiles.alphacoders.com/107/107487.jpg",
+        "Title": "Anonymous",
+        "Description": "bla blab bla Anonymous",
+        "rating": 2
+    },
+    {
+        "Poster": "https://avatarfiles.alphacoders.com/688/68800.png",
+        "Title": "Second Goku",
+        "Description": "bla blab bla Goku",
+        "rating": 4
+    },
+    {
+        "Poster": "https://avatarfiles.alphacoders.com/656/65658.png",
+        "Title": "Stitch",
+        "Description": "bla blab bla Stitch",
+        "rating": 5
+    }
+]
