@@ -1,5 +1,7 @@
 import React from "react"
 import MovieCard from "./MovieCard";
+import {Link, Route} from 'react-router-dom';
+import { MovieDetail } from "./MovieDetail";
 
 export default function MovieList({movies, term, filter})
 {
@@ -12,8 +14,14 @@ export default function MovieList({movies, term, filter})
 					return val.rating <= filter;
 				}
 			}).map((movie) => (
-                <MovieCard title = {movie.Title} imageURL = {movie.Poster} description = {movie.Description} rating = {movie.rating} />
+				<div style = {{width: "18rem", margin: "30px"}}>
+					<Link to = "/adam" style = {{textDecoration : "none", color: "black"}} >
+						<MovieCard title = {movie.Title} imageURL = {movie.Poster} description = {movie.Description} rating = {movie.rating} />
+					</Link>
+				</div>
 			))}
+
+
 		</>
 	);
 }

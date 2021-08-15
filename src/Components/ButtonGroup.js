@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 
 
 function ButtonGroup({addMovie, filterDone, clearFilter}) {
@@ -8,13 +8,13 @@ function ButtonGroup({addMovie, filterDone, clearFilter}) {
     const filter = useRef();
     const rating = useRef();
 
+
     const handleClick = () => {
         const movie = {"Poster" : URL.current.value, "Title": title.current.value, "Description": description.current.value, "rating": rating.current.value};
         addMovie(movie);   
     }
 
     const handleFilterClick = () => {
-        // console.log(filter.current.value);
         filterDone(filter.current.value);
     }
 
@@ -28,6 +28,7 @@ function ButtonGroup({addMovie, filterDone, clearFilter}) {
             <div style = {{width: "30%"}}>
                 <label for="customRange3" class="form-label">Rating Filter</label>
                 <input type="range" ref = {filter} class="form-range" min="0" max="5" step="1" id="customRange3"></input>
+                
             </div>
 
 
