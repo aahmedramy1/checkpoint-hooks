@@ -14,6 +14,7 @@ function App() {
     const [searchTerm, setSearchTerm] = useState("");
 
 
+
     const addMovie = (movieObj) => {
         setMovies((prev) => {
             return [...prev, movieObj];
@@ -47,7 +48,7 @@ function App() {
                     </div>
                 </div>
             </Route>
-            <Route path = "/:id" render = {({match}) => (<MovieDetail movieID = {match.params.id} />)} />
+            <Route path = "/:id" render = {({match}) => (<MovieDetail movies = {movies} movieID = {match.params.id} />)} />
         </>
 
 

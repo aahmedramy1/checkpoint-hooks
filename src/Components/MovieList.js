@@ -13,15 +13,13 @@ export default function MovieList({movies, term, filter})
 				} else if(val.Title.toLowerCase().includes(term.toLowerCase())) {
 					return val.rating <= filter;
 				}
-			}).map((movie) => (
-				<div style = {{width: "18rem", margin: "30px"}}>
-					<Link to = "/adam" style = {{textDecoration : "none", color: "black"}} >
-						<MovieCard title = {movie.Title} imageURL = {movie.Poster} description = {movie.Description} rating = {movie.rating} />
+			}).map((movie, index) => (
+				<div style = {{width: "18rem", margin: "30px"}} key ={index}>
+					<Link to = {`/${movie.movieID}`} style = {{textDecoration : "none", color: "black"}}  >
+						<MovieCard title = {movie.Title} imageURL = {movie.Poster} description = {movie.Description} rating = {movie.rating}  />
 					</Link>
 				</div>
 			))}
-
-
 		</>
 	);
 }
