@@ -5,7 +5,7 @@ function ButtonGroup({addMovie, filterDone, clearFilter}) {
     const title = useRef();
     const description = useRef();
     const URL = useRef();
-    const filter = useRef();
+    const filter = useRef(5);
     const rating = useRef();
     const id = useRef(7);
      
@@ -31,7 +31,6 @@ function ButtonGroup({addMovie, filterDone, clearFilter}) {
             <div style = {{width: "30%"}}>
                 <label htmlFor="customRange3" className="form-label">Rating Filter</label>
                 <input type="range" ref = {filter} className="form-range" min="0" max="5" step="1" id="customRange3"></input>
-                
             </div>
 
 
