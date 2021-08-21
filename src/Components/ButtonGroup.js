@@ -1,11 +1,11 @@
-import React, {useRef, useState, useEffect} from 'react'
+import React, {useRef, useState} from 'react'
 
 
 function ButtonGroup({addMovie, filterDone, clearFilter}) {
     const title = useRef();
     const description = useRef();
     const URL = useRef();
-    const filter = useRef(5);
+    const [filter, setfilter] = useState(5);
     const rating = useRef();
     const id = useRef(7);
      
@@ -18,19 +18,24 @@ function ButtonGroup({addMovie, filterDone, clearFilter}) {
     }
 
     const handleFilterClick = () => {
-        filterDone(filter.current.value);
+        filterDone(filter);
     }
 
     const handleClearFiterClick = () => {
         clearFilter();
     }
 
+    
+
 
     return (
         <div>
             <div style = {{width: "30%"}}>
                 <label htmlFor="customRange3" className="form-label">Rating Filter</label>
-                <input type="range" ref = {filter} className="form-range" min="0" max="5" step="1" id="customRange3"></input>
+                <div style = {{display: "flex"}}>
+                    <input type="range" value = {filter} className="form-range" min="0" max="5" step="1" id="customRange3" onChange = {(e) => {setfilter(e.target.value)}}></input>
+                    <p style = {{marginLeft: "0.6rem"}}>{filter}</p>
+                </div>
             </div>
 
 

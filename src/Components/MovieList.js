@@ -1,7 +1,6 @@
 import React from "react"
 import MovieCard from "./MovieCard";
-import {Link, Route} from 'react-router-dom';
-import { MovieDetail } from "./MovieDetail";
+import {Link} from 'react-router-dom';
 
 export default function MovieList({movies, term, filter})
 {
