@@ -3,6 +3,8 @@ import StarIcon from '@material-ui/icons/Star';
 
 
 export default function MovieCard({title, imageURL, description, rating}) {
+
+    
     return(
         <div className="card" >
             <img src= {imageURL} className="card-img-top" alt="..."  style = {{maxWidth: "100%", height: "auto"}}/>

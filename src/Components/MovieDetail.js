@@ -13,6 +13,15 @@ export function MovieDetail({movies, movieID, match}) {
         }
     })
 
+    if(!movie)
+    {
+        return(
+            <>
+                <h1>Error</h1>
+            </>
+        )
+    }
+
    const handleBackClick = () => {
        window.history.back();
    }

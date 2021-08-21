@@ -50,9 +50,6 @@ function App() {
             </Route>
             <Route path = "/:id" render = {({match}) => (<MovieDetail movies = {movies} movieID = {match.params.id} match = {match} />)} />
         </>
-
-
-
     );
 
 }
