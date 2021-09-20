@@ -7,7 +7,11 @@ export default function MovieList({ movies, term, filter }) {
     <>
       {movies
         .filter((val) => {
-          return term === "" ? val.rating <= filter : val.rating <= filter;
+          return term === ""
+            ? val.rating <= filter
+            : val.Title.toLowerCase().includes(term.toLowerCase())
+            ? val.rating <= filter
+            : null;
         })
         .map((movie, index) => (
           <div style={{ width: "18rem", margin: "30px" }} key={index}>
