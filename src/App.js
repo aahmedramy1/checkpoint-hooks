@@ -14,7 +14,7 @@ function App() {
 
   const addMovie = (movieObj) => {
     setMovies((prev) => {
-      return [...prev, movieObj];
+      return [movieObj, ...prev];
     });
   };
 
